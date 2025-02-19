@@ -434,10 +434,16 @@ button {
     gap: 10px;
 }
 
+.staff-first-item {
+    align-items: flex-start;
+}
+
 
 .staff-txt {
-    width: 300px;
-    height: 85px;
+    width: 281px;
+    height: 50px;
+    border-radius: 30px;
+    padding: 13px 20px;
     font-weight: 500;
     font-size: 16px;
     text-align: center;
@@ -456,4 +462,459 @@ button {
     width: 216px;
     height: 53px;
     background: #02897a;
+}
+
+
+/*   News feed section   */
+
+
+
+.news-feed {
+    padding-bottom: 100px;
+}
+
+.news-feed-title {
+    font-size: 34px;
+}
+
+.news-feed-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 465px;
+}
+
+.news-feed-list {
+    display: flex;
+    gap: 30px;
+}
+
+.news-feed-item {
+    border-radius: 8px;
+    border: 1px solid #dedede;
+    width: 350px;
+    height: 359px;
+    background: #fff;
+}
+
+.news-feed-img {
+    border-radius: 8px 8px 0 0;
+}
+
+.news-feed-txt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    margin-left: 24px;
+
+}
+
+.news-feed-txt span {
+    font-weight: 700;
+}
+
+.news-feed-subtitle {
+    font-size: 24px;
+    line-height: 1.67;
+    padding: 0 27px;
+
+}
+
+.motivation {
+    color: #02897a;
+}
+
+
+/*   Pricing section   */
+
+
+
+.pricing {
+    padding-top: 71px;
+}
+
+.pricing-title {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0 auto 10px;
+    width: 192px;
+
+}
+
+.pricing-text {
+    font-weight: 500;
+    font-size: 16px;
+    width: 213px;
+    margin: 0 auto 40px;
+}
+
+.pricing-list {
+    display: flex;
+    gap: 72px;
+}
+
+.pricing-item {
+    border-radius: 8px;
+    width: 322px;
+    height: 456px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.active-item {
+    background: #02897a;
+    color: #ffffff;
+}
+
+.pricing-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.7;
+
+}
+
+.pricing-txt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2.5;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.pricing-box {
+    display: flex;
+    align-items: center;
+
+}
+
+.price {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 1.32;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #02897a;
+}
+
+.price-active {
+    color: #fff;
+}
+
+.dollar {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: 0em;
+    color: #02897a;
+}
+
+.dollar-active {
+    color: #fff;
+}
+
+.pricing-item-txt {
+    font-family: "Montserrat",
+        sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1875;
+    letter-spacing: 0.01em;
+    color: #afafaf;
+}
+
+.pricing-item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+
+
+.pricing-item-list-txt {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.38;
+    letter-spacing: 0.01em;
+    color: #22343d;
+}
+
+.pricing-item-list-txt-active {
+    color: #fff;
+}
+
+.pricing-button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 8px;
+    border: transparent;
+    width: 139px;
+    height: 44px;
+    background: #02897a;
+}
+
+.pricing-btn {
+    background: #fff;
+    color: #02897a;
+}
+
+/*   Feedback section   */
+
+
+
+.feedback {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.feedback-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.78;
+    letter-spacing: 0.01em;
+    width: 284px;
+    margin: 0 auto 10px;
+}
+
+.feedback-text {
+    width: 537px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.feedback-list {
+    display: flex;
+    margin-top: 40px;
+    gap: 64px;
+    padding: 28px auto 28px 28px;
+}
+
+.feedback-item {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    padding: 30px 35px;
+    width: 327px;
+    height: 240px;
+}
+
+
+.feedback-txt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+    color: #737373;
+    margin: 16px 0;
+    width: 275px;
+}
+
+.feedback-item-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+
+
+.feedback-autor {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+    color: #737373;
+}
+
+.feedback-designer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    color: #252b42;
+}
+
+/*   Promo section   */
+
+
+
+.promo {
+    border-radius: 32px;
+    width: 968px;
+    height: 345px;
+    background: #02897a;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.promo-box {
+    padding: 49px 0px 56px 51px;
+}
+
+.promo-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.5;
+    color: #fff;
+    width: 510px;
+    height: 144px;
+    margin-bottom: 46px;
+
+}
+
+.promo-btn {
+    border-radius: 8px;
+    width: 150px;
+    height: 50px;
+    background: #fff;
+    border: transparent;
+    margin-left: 51px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #02897a;
+}
+
+
+/*   Footer section   */
+
+.footer {
+    padding-top: 100px;
+}
+
+
+
+.footer-box {
+    display: flex;
+}
+
+
+
+.logo {
+    margin-bottom: 18px;
+    margin-right: 146px;
+}
+
+.social-list {
+    display: flex;
+    gap: 16px;
+
+}
+
+.social-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-item:hover,
+.social-item:focus {
+    stroke: #02897a;
+}
+
+
+.social-img {
+    stroke: #02897a;
+}
+
+
+
+.resource-box {
+    width: 118px;
+    margin-right: 129px;
+}
+
+.footer-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+.resource-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2.2;
+}
+
+
+.resource-link {
+    color: #22343d;
+}
+
+.stuff-box {
+    width: 131px;
+    margin-right: 83px;
+}
+
+
+.stuff-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2.2;
+}
+
+.stuff-link {
+    color: #22343d;
+}
+
+.subscribe {
+    width: 325px;
+
+}
+
+
+.subscribe-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+    width: 325px;
+    height: 48px;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #02897a;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.subscribe-btn {
+    border-radius: 4px;
+    width: 131px;
+    height: 39px;
+    background-color: #02897a;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    border: transparent;
+}
+
+.footer-undertext {
+    width: 395px;
+    margin: 10px auto 2px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
 }
