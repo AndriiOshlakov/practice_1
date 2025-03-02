@@ -37,6 +37,7 @@ button {
     width: 1150px;
     padding: 0 20px;
     margin: 0 auto;
+
 }
 
 /* HEADER  */
@@ -83,6 +84,7 @@ button {
 }
 
 .header-btn {
+    display: block;
     border: 1px solid #bcd0e5;
     border-radius: 4px;
     min-width: 105px;
@@ -103,14 +105,15 @@ button {
 
 /* MAIN   */
 
-/*  HERO SECTION  */
-
-
+/*  #region HERO SECTION  */
 
 .hero {
-    display: flex;
     padding-top: 28px;
     padding-bottom: 97px;
+}
+
+.hero-container {
+    display: flex;
 }
 
 .hero-wrap {
@@ -145,8 +148,6 @@ button {
 }
 
 
-
-
 .hero-btn {
     font-weight: 700;
     font-size: 16px;
@@ -177,16 +178,12 @@ button {
     fill: #02897a;
 }
 
+/*   #endregion Hero   */
 
-
-/*  SECTION FEATURE */
-
-
+/*  #region SECTION FEATURE */
 
 .feature {
     padding-bottom: 50px;
-
-
 }
 
 .feature-title {
@@ -266,11 +263,15 @@ button {
     margin-left: auto;
 }
 
-/*   MANAGMENT SECTION   */
+/*   #endregion Feature   */
 
+/*   #region MANAGMENT SECTION   */
 
 .managment {
     padding-bottom: 50px;
+}
+
+.managment-container {
     display: flex;
     align-items: center;
     gap: 84px;
@@ -312,25 +313,24 @@ button {
     margin-bottom: 12px;
 }
 
+/*   #endregion Managment   */
 
 
-
-/*   SUPORT SECTION   */
+/*   #region SUPORT SECTION   */
 
 .support {
-    display: flex;
-    align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
-
 }
 
-
+.support-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .support-wrap {
     width: 450px;
-    height: 419px;
-    margin-left: 84px;
 }
 
 .support-text {
@@ -338,6 +338,7 @@ button {
     font-size: 16px;
     margin-bottom: 8px;
 }
+
 
 .support-title {
     font-weight: 700;
@@ -383,23 +384,54 @@ button {
 
 
 .support-txt {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.625;
-    width: 386px;
-}
-
-
-
-/*   COLABORATION Section  */
-
-
-
-.colaboration {
     display: flex;
     align-items: center;
+    gap: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    width: 386px;
+
+}
+
+.support-txt::before {
+    content: "";
+    display: block;
+    border: 3px solid #fff;
+    border-radius: 14px;
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-image: url(../images/Path.svg);
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.support-item:nth-child(1) .support-txt::before {
+    background-color: #f90;
+}
+
+.support-item:nth-child(2) .support-txt::before {
+    background-color: #f03e3d;
+}
+
+.support-item:nth-child(3) .support-txt::before {
+    background-color: #4d8dff;
+}
+
+/*   #endregion Support   */
+
+
+/*   #region COLABORATION Section  */
+
+.colaboration {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.colaboration-container {
+    display: flex;
+    align-items: center;
 }
 
 .colaboration-wrap {
@@ -440,17 +472,20 @@ button {
     margin-bottom: 12px;
 }
 
+/*  #endregion Colaboration   */
 
 
-
-/*   STAFF Section   */
+/*  #region  STAFF Section   */
 
 
 .staff {
-    width: 956px;
-    height: 689px;
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.container-staff {
+    width: 916px;
+    height: 489px;
 }
 
 .staff-title {
@@ -518,10 +553,9 @@ button {
     background: #02897a;
 }
 
+/*   #endregion Staff   */
 
-/*   News feed section   */
-
-
+/*   #region News feed section   */
 
 .news-feed {
     padding-bottom: 100px;
@@ -582,10 +616,9 @@ button {
     color: #02897a;
 }
 
+/*   #endregion News feed   */
 
-/*   Pricing section   */
-
-
+/*   #region Pricing section   */
 
 .pricing {
     padding-top: 71px;
@@ -727,9 +760,9 @@ button {
     color: #02897a;
 }
 
-/*   Feedback section   */
+/*   #endregion Pricing   */
 
-
+/*  #region Feedback section   */
 
 .feedback {
     padding-top: 100px;
@@ -805,22 +838,30 @@ button {
     color: #252b42;
 }
 
-/*   Promo section   */
+/*   #endregion Feedback   */
 
+/*   #region Promo section   */
 
+.promo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.promo {
+.promo-wrap {
     border-radius: 32px;
-    width: 968px;
+    max-width: 968px;
     height: 345px;
     background: #02897a;
     display: flex;
     justify-content: center;
     gap: 10px;
+    padding-right: 46px;
+    padding-left: 51px;
 }
 
 .promo-box {
-    padding: 49px 0px 56px 51px;
+    padding: 49px 0 56px 0;
 }
 
 .promo-title {
@@ -828,10 +869,8 @@ button {
     font-size: 32px;
     line-height: 1.5;
     color: #fff;
-    width: 510px;
-    height: 144px;
     margin-bottom: 46px;
-
+    max-width: 490px;
 }
 
 .promo-btn {
@@ -840,14 +879,17 @@ button {
     height: 50px;
     background: #fff;
     border: transparent;
-    margin-left: 51px;
     font-weight: 600;
     font-size: 20px;
     color: #02897a;
 }
 
 
-/*   Footer section   */
+/*   #endregion Promo   */
+
+
+/*  #region Product Footer section   */
+
 
 .footer {
     padding-top: 100px;
@@ -929,27 +971,46 @@ button {
 }
 
 
-.subscribe-button {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    border: 1px solid #bcd0e5;
-    border-radius: 4px;
+
+
+.subscribe-title {
+    margin-bottom: 30px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.phone {
     width: 325px;
     height: 48px;
+    padding-left: 42px;
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
     background-color: #fff;
+
+}
+
+.phone-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    fill: #02897a;
+}
+
+.phone::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.75;
     color: #02897a;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    fill: #02897a;
 }
 
 .subscribe-btn {
     border-radius: 4px;
-    width: 131px;
+    min-width: 131px;
     height: 39px;
     background-color: #02897a;
     font-weight: 700;
@@ -965,3 +1026,280 @@ button {
     font-size: 16px;
     line-height: 1.9;
 }
+
+/*   #endregion  Footer   */
+
+/*   #region CUSTOMERS    */
+
+/*   #region Our Clients   */
+
+.our-clients {
+    padding-top: 100px;
+    padding-bottom: 117px;
+}
+
+.our-clients-container {
+    max-width: 890px;
+
+}
+
+.our-clients-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #22343d;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.our-clients-list {
+    display: flex;
+    gap: 64px;
+}
+
+
+/*   #endregion Our Clients   */
+
+/*   #region Choice   */
+
+.choice {
+    background-color: #f5f5f5;
+    padding-top: 24px;
+    padding-bottom: 68px;
+}
+
+.choice-title {
+    font-weight: 700;
+    font-size: 34px;
+    text-align: center;
+    color: #22343d;
+    margin-bottom: 50px;
+}
+
+.choice-list {
+    display: flex;
+    gap: 30px;
+}
+
+.choice-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+}
+
+.choice-item:nth-child(1) .choice-img-box {
+    background-color: #02897a;
+}
+
+.choice-item:nth-child(2) .choice-img-box {
+    background-color: #4d8dff;
+}
+
+.choice-item:nth-child(3) .choice-img-box {
+    background-color: #f03e3d;
+}
+
+.choice-img-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 32px auto;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    fill: #fff;
+}
+
+.choicesubtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #22343d;
+}
+
+.choice-txt {
+    max-width: 275px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    color: #22343d;
+    margin: 16px auto 34px;
+}
+
+/*   #endregion Choice   */
+
+/*   #region Product Work   */
+
+.product-work {
+    padding-top: 101px;
+    padding-bottom: 115px;
+}
+
+.product-work-container {
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-work-title {
+    font-weight: 700;
+    font-size: 34px;
+
+    color: #22343d;
+    margin-bottom: 73px;
+}
+
+.product-work-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    margin-bottom: 72px;
+}
+
+.product-work-item {
+    display: flex;
+    justify-content: space-between;
+    width: 1028px;
+
+}
+
+.item-step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    row-gap: 16px;
+}
+
+
+
+.product-work-item-text {
+    font-weight: 500;
+    font-size: 20px;
+    color: #22343d;
+}
+
+.product-work-item-subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    color: #22343d;
+}
+
+.product-work-item-txt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #22343d;
+    max-width: 390px;
+}
+
+.get-in {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    background-color: #02897a;
+    border: transparent;
+    border-radius: 8px;
+    min-width: 224px;
+    height: 44px;
+}
+
+/*   #endregion Product Work   */
+
+/*   #region Joining   */
+
+.joining {
+    padding-top: 35px;
+    padding-bottom: 45px;
+    background: linear-gradient(180deg, #f5f5f5 0%, rgba(245, 245, 245, 0) 100%);
+}
+
+
+.joining-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.joining-title {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #22343d;
+    max-width: 537px;
+    margin-bottom: 93px;
+}
+
+.joining-list {
+    display: flex;
+    gap: 227px;
+}
+
+.joining-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.joining-item-img {
+    margin-bottom: 27px;
+}
+
+.joining-subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+
+.joining-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+    color: #22343d;
+    margin-bottom: 12px;
+}
+
+.joining-txt {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #000;
+}
+
+/*   #endregion Joining   */
+
+/*   #region Promo Customers  */
+
+.promo-customers {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.promo-btn-customers {
+    color: #22343d;
+}
+
+/*   #endregion Promo Customers   */
+
+/*   #region Footer Customers   */
+
+.phone-customers {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+/*   #endregion Footer Customers   */
+
+/*   #endregion CUSTOMERS   */
